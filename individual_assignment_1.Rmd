@@ -51,25 +51,25 @@ For options, you need to include the `--` in the command line call, for example:
 >
 > For example, the output without setting a value for `arg3` is as follows:
 >
-> \$ Rscript demo.R 1 \--arg2=2
+> `$ Rscript demo.R 1 --arg2=2`
 >
-> List of 6
+> `List of 6`
 >
-> \$ \--arg2: chr "2"
+> `$ --arg2: chr "2"`
 >
-> \$ \--arg3: NULL
+> `$ --arg3: NULL`
 >
-> \$ \<arg1\>: chr "1"
+> `$ <arg1>: chr "1"`
 >
-> \$ arg2 : chr "2"
+> `$ arg2  : chr "2"`
 >
-> \$ arg3 : NULL
+> `$ arg3  : NULL`
 >
-> \$ arg1 : chr "1"
+> `$ arg1  : chr "1"`
 >
-> NULL
+> `NULL`
 >
-> [1] "list"
+> `[1] "list"`
 
 ### Exercise 4
 
@@ -77,10 +77,9 @@ For options, you need to include the `--` in the command line call, for example:
 
 Run the `demo.R` script and find at least 3 different ways to break it by changing the values or order of the command line arguments at the command line (do not modify the script). Document how you did this below.
 
-> 1.  Add arguments that are not defined
-> 2.  Not adding a required argument
-> 3.  Adding a named argument twice
-> 4.  
+> 1.  Add arguments that are not defined (i.e. `$ Rscript demo.R 1 --arg2=2 --arg_new=3`)
+> 2.  Not adding a required argument (i.e. `$ Rscript demo.R 1`)
+> 3.  Not using the proper "flags" (i.e. `$ Rscript demo.R 1 arg2=2`)
 
 ### Exercise 5
 
@@ -88,7 +87,7 @@ Run the `demo.R` script and find at least 3 different ways to break it by changi
 
 Copy the `demo.R` script into your `docopt_demo` repo, and then edit it to add a new positional argument that is optional. Commit this change and push it to your `docopt_demo` repository. Paste the URL to this commit below:
 
-> Your answer here
+> <https://github.com/YXIN15/docopt_demo/commit/7d42ab33cfadff9577036bcdfddecfbe97266e7f>
 
 ### Exercise 6
 
@@ -96,7 +95,7 @@ Copy the `demo.R` script into your `docopt_demo` repo, and then edit it to add a
 
 Modify the `demo.R` script further so that the print statements happen inside a main function. Commit this change and push it to your `docopt_demo` repository. Paste the URL to this commit below:
 
-> Your answer here
+> <https://github.com/YXIN15/docopt_demo/commit/2533e424bb6395c99d5fa11334d4c957008c4cf9>
 
 ### Exercise 7
 
@@ -104,7 +103,7 @@ Modify the `demo.R` script further so that the print statements happen inside a 
 
 In [this repo](https://github.ubc.ca/MDS-2022-23/DSCI_522_dsci-workflows_students), in the `src` directory, you will find a script named `demo.py`. Run the `demo.py` script giving it appropriate arguments to see what the `docopt` function in Python returns. Try setting and not setting a value for `arg3`. How does this differ from what `docopt` returns in R? Describe what you observed below.
 
-> Your answer here
+> In python, rather than a named list like in R, we return a dictionary with arguments as keys and inputs as values. If we don't include a value for `arg3`, then its value in the dictionary is `None`. We also return the class `<class 'docopt.ParsedOptions'>` which is different than the `list` type returned by R.
 
 ### Exercise 8
 

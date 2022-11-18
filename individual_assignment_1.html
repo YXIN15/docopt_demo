@@ -436,16 +436,16 @@ the values for “--arg3” and “arg3” are both <code>NULL</code>.</p>
 the first output (i.e. “List”)</p>
 <p>For example, the output without setting a value for <code>arg3</code>
 is as follows:</p>
-<p>$ Rscript demo.R 1 --arg2=2</p>
-<p>List of 6</p>
-<p>$ --arg2: chr “2”</p>
-<p>$ --arg3: NULL</p>
-<p>$ &lt;arg1&gt;: chr “1”</p>
-<p>$ arg2 : chr “2”</p>
-<p>$ arg3 : NULL</p>
-<p>$ arg1 : chr “1”</p>
-<p>NULL</p>
-<p>[1] “list”</p>
+<p><code>$ Rscript demo.R 1 --arg2=2</code></p>
+<p><code>List of 6</code></p>
+<p><code>$ --arg2: chr &quot;2&quot;</code></p>
+<p><code>$ --arg3: NULL</code></p>
+<p><code>$ &lt;arg1&gt;: chr &quot;1&quot;</code></p>
+<p><code>$ arg2  : chr &quot;2&quot;</code></p>
+<p><code>$ arg3  : NULL</code></p>
+<p><code>$ arg1  : chr &quot;1&quot;</code></p>
+<p><code>NULL</code></p>
+<p><code>[1] &quot;list&quot;</code></p>
 </blockquote>
 </div>
 <div id="exercise-4" class="section level3">
@@ -457,10 +457,12 @@ arguments at the command line (do not modify the script). Document how
 you did this below.</p>
 <blockquote>
 <ol style="list-style-type: decimal">
-<li>Add arguments that are not defined</li>
-<li>Not adding a required argument</li>
-<li>Adding a named argument twice</li>
-<li></li>
+<li>Add arguments that are not defined
+(i.e. <code>$ Rscript demo.R 1 --arg2=2 --arg_new=3</code>)</li>
+<li>Not adding a required argument
+(i.e. <code>$ Rscript demo.R 1</code>)</li>
+<li>Not using the proper “flags”
+(i.e. <code>$ Rscript demo.R 1 arg2=2</code>)</li>
 </ol>
 </blockquote>
 </div>
@@ -473,7 +475,7 @@ argument that is optional. Commit this change and push it to your
 <code>docopt_demo</code> repository. Paste the URL to this commit
 below:</p>
 <blockquote>
-<p>Your answer here</p>
+<p><a href="https://github.com/YXIN15/docopt_demo/commit/7d42ab33cfadff9577036bcdfddecfbe97266e7f" class="uri">https://github.com/YXIN15/docopt_demo/commit/7d42ab33cfadff9577036bcdfddecfbe97266e7f</a></p>
 </blockquote>
 </div>
 <div id="exercise-6" class="section level3">
@@ -484,7 +486,7 @@ statements happen inside a main function. Commit this change and push it
 to your <code>docopt_demo</code> repository. Paste the URL to this
 commit below:</p>
 <blockquote>
-<p>Your answer here</p>
+<p><a href="https://github.com/YXIN15/docopt_demo/commit/2533e424bb6395c99d5fa11334d4c957008c4cf9" class="uri">https://github.com/YXIN15/docopt_demo/commit/2533e424bb6395c99d5fa11334d4c957008c4cf9</a></p>
 </blockquote>
 </div>
 <div id="exercise-7" class="section level3">
@@ -498,7 +500,12 @@ Python returns. Try setting and not setting a value for
 <code>arg3</code>. How does this differ from what <code>docopt</code>
 returns in R? Describe what you observed below.</p>
 <blockquote>
-<p>Your answer here</p>
+<p>In python, rather than a named list like in R, we return a dictionary
+with arguments as keys and inputs as values. If we don’t include a value
+for <code>arg3</code>, then its value in the dictionary is
+<code>None</code>. We also return the class
+<code>&lt;class &#39;docopt.ParsedOptions&#39;&gt;</code> which is different
+than the <code>list</code> type returned by R.</p>
 </blockquote>
 </div>
 <div id="exercise-8" class="section level3">

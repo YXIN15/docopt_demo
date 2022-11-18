@@ -111,13 +111,13 @@ In [this repo](https://github.ubc.ca/MDS-2022-23/DSCI_522_dsci-workflows_student
 
 Copy the `demo.py` script into your `docopt_demo` repo, and then edit it to add a new positional argument that is optional. Commit this change and push it to your `docopt_demo` repository. Paste the URL to this commit below:
 
-> Your answer here
+> <https://github.com/YXIN15/docopt_demo/commit/b6d75d0ef54db05045b08aef5a625391e57fd924>
 
 ### Exercise 9
 
 Modify the `demo.py` script further so that the print statements happen inside a main function. Commit this change and push it to your `docopt_demo` repository. Paste the URL to this commit below:
 
-> Your answer here
+> <https://github.com/YXIN15/docopt_demo/commit/565078b98b48cf6ff830ab1c7401be2e6945d8ea>
 
 ### Exercise 10
 
